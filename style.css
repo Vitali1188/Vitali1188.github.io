@@ -12,6 +12,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: #282C34;
 }
 body, * {
 
@@ -29,13 +30,10 @@ li {
 li:hover {
   background-color: #4285F4;
 }
-li:hover a {
-  color: #fff;
-}
 li a {
   text-decoration: none;
   font-size: 50px;
-  color: #777;
+  color: #F1F3F4;
   transition: .1s;
   position: relative;
   padding: 5px 40px;
