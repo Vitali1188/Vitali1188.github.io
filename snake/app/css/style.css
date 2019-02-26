@@ -1,0 +1,146 @@
+body {
+  overflow: hidden;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.field {
+  margin: 10px auto;
+}
+
+.field  table {
+  float: left;  
+  border: 1px solid #ccc;
+}
+.field .info {float: right;}
+
+.info {
+  width:  79px;
+  border: 1px solid #ccc;
+  border-left: 0;
+  position: relative;
+}
+
+.info span:not(:nth-child(2)){display: block; text-align: center; margin: 20px 0;}
+.high-score{font-size: 12px; text-align: center; display: block; margin-top: -15px!important;}
+
+td {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.plus {
+  transition: .6s;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.snake {
+  background-image: url(../img/snake-graphics.png);
+  background-repeat: no-repeat;
+  background-size: 100px 80px;  
+}
+.snakeHead{
+  background-image: url(../img/snake-graphics.png);
+  background-repeat: no-repeat;
+  background-size: 100px 80px;
+}
+
+
+.tail-r {background-position: -80px -40px!important}
+.tail-t {background-position: -60px -40px!important}
+.tail-l {background-position: -60px -60px!important}
+.tail-b {background-position: -80px -60px!important}
+
+.snakeX {background-position: -20px 0;}
+.snakeY {background-position: -40px -20px;}
+
+.Bottom {background-position: -80px -20px;}
+.Left {background-position: -60px -20px;}
+.Top {background-position: -60px 0px;}
+.Right {background-position: -80px 0;}
+
+.right-bottom, .top-left {background-position: -40px 0px;}
+.right-top, .bottom-left {background-position: -40px -40px;}
+.left-top, .bottom-right {background-position: 0px -20px;}
+.top-right, .left-bottom {background-position: 0px 0px;}
+
+
+.target, .plus {  
+  background-image: url(../img/targets.png);
+  background-repeat: no-repeat;
+  background-size: 140px 20px;
+}
+.grapes {background-position: 0 0;}
+.bananas {background-position: -121px 0;}
+.cherries {background-position: -99px 0;}
+.poison {background-position: -20px 0;}
+
+h1{
+  text-align: center;
+  font-size: 20px;
+  margin: 10px auto;
+  line-height: 20px;
+  font-weight: bold;  
+}
+
+.popap{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,.6);
+  color: #fff;
+  text-align: center;
+  font-size: 30px;  
+  padding-top: 20vh;
+}
+
+.popap button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  margin: 40px auto;
+  font-size: 1.3rem;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+}
+.popap h1{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.pause {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+.blink {animation: blink 1.5s ease-in-out infinite}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  10% { opacity: 1; }
+}
+
+.wall {
+  background-image: url(../img/Bricks.jpg);
+  background-size: 60px 60px;
+}
